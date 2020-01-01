@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Happy New Year everyone! Kicking off the new year by creating my portfolio page. 
 
