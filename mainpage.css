@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   border-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .navigation {
@@ -9,6 +12,7 @@
   width: 100%;
   height: 100px;
   background-color: #16253d;
+  z-index: 1; /* otherwise content would overlap */
 }
 
 .menu-container {
@@ -41,29 +45,119 @@ section {
 }
 
 #intro {
+  padding-top: 120px;
   height: 600px;
   background-color: #002c54;
 }
 
-#about-me {
-  height: 400px;
-  background-color: #cd7213;
+.heading {
+  font-size: 50px;
+  color: white;
 }
+
+.first {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.last {
+  text-align: right;
+  margin-right: 20%;
+}
+
+.heading > span {
+  color:  #efb509;
+}
+
+
+/* About Me Section */
+
+#about-me {
+  height: 600px;
+  background-color: #cd7213;
+  text-align: center;
+}
+
+#about-me > h1 {
+  padding-top: 50px;
+}
+
+/* flex-container for languages */
+.languages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
+}
+
+/* columns */
+.language {
+  position: relative;
+  width: 15%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid;
+  margin: 50px;
+  background-color: white;
+  font-size: 30px;
+}
+
+.icon-html5 {
+  background-image:url(https://img.icons8.com/color/144/000000/html-5.png);
+  width: 144px;
+  height: 140px;
+}
+
+.icon-css {
+  background-image: url(https://img.icons8.com/color/144/000000/css3.png);
+  width: 144px;
+  height: 140px;
+}
+
+.icon-js {
+  background-image:         url(https://img.icons8.com/color/144/000000/javascript.png);
+  width: 144px;
+  height: 140px;
+}
+
+.icon-java {
+  background-image: url(https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png);
+   width: 144px;
+  height: 140px;
+}
+
+
+/* Contact Me Section */
 
 #contact-me {
   height: 600px;
   background-color: #002c54;
 }
 
+/* Footer */
+
 footer {
   width: 100%;
-  height:80px;
+  height:90px;
   background-color:  #16253d;
   color: #efb509;
+  padding-left: 1em;
 }
 
 footer > p {
-  padding: 1em;
   font-size: 20px;
-  text-align: center;
+}
+
+footer > a {
+  color: #efb509;
+  text-decoration: none;
+}
+
+footer > a > span {
+  text-decoration: underline;
 }
