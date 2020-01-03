@@ -73,13 +73,19 @@ section {
 /* About Me Section */
 
 #about-me {
-  height: 600px;
+  height: auto;
   background-color: #cd7213;
   text-align: center;
 }
 
 #about-me > h1 {
   padding-top: 50px;
+  font-size: 50px;
+}
+
+#about-me > h2 {
+  padding-top: 50px;
+  font-size: 35px;
 }
 
 /* flex-container for languages */
@@ -101,10 +107,13 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid;
+  border: 2px solid;
+  border-radius: 50px;
+  border-color: silver;
   margin: 50px;
-  background-color: white;
+  background-color: #f5f5f5;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .icon-html5 {
@@ -131,12 +140,84 @@ section {
   height: 140px;
 }
 
+/* Dev Tools */
+.dev-tool-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+/* Columns */
+.tool {
+  position: relative;
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: 20px 20px 30px;
+  background-color: #efb509;
+}
+
+/* Projects Section */
+#projects {
+  height: 1000px;
+  background-color: #cd7213;
+  text-align: center;
+}
+
+#projects > h1 {
+  font-size: 50px;
+  padding-top: 50px;
+}
 /* Contact Me Section */
 
 #contact-me {
   height: 600px;
   background-color: #002c54;
+  text-align: center;
+}
+
+#contact-me > h1 {
+  font-size: 50px;
+  color: #efb509;
+  padding-top: 50px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.linkedin {
+  background-image: url(https://img.icons8.com/color/48/000000/linkedin.png);
+  height: 50px;
+  width: 50px;
+}
+
+.xing {
+  background-image: url(https://img.icons8.com/color/48/000000/xing.png);
+  height: 50px;
+  width: 50px;
+}
+
+.github {
+  background-image: url(https://img.icons8.com/material-sharp/48/000000/github.png);
+  height: 50px;
+  width: 50px;
+}
+
+.codepen {
+  background-image: url(https://img.icons8.com/material/48/000000/codepen.png);
+  height: 50px;
+  width: 50px;
 }
 
 /* Footer */
