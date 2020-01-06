@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+
+:root {
+/* Color Theme Swatches in RGBA */
+--hotPink: rgba(242, 12, 73, 1);
+--lightPurple: rgba(215, 12, 242, 1);
+--darkPurple: rgba(85, 4, 140, 1);
+--blue: rgba(81, 7, 242, 1);
+--orange: rgba(242, 73, 12, 1);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +22,7 @@
   position: fixed;
   width: 100%;
   height: 100px;
-  background-color: #16253d;
+  background-color: var(--darkPurple);
   z-index: 1; /* otherwise content would overlap */
 }
 
@@ -27,15 +38,15 @@
   border: outset;
   border-radius: 40%;
   border-width: 2px;
-  border-color: #efb509;
+  border-color: var(--lightPurple);
   cursor: pointer;
   width: 140px;
   height: 60px;
-  background-color: #16253d;
+  background-color: var(--hotPink);
 }
 
 .menu-button > a {
-  color: #efb509;
+  color: white;
   font-size: 30px;
   text-decoration: none;
 }
@@ -47,12 +58,12 @@ section {
 #intro {
   padding-top: 120px;
   height: 600px;
-  background-color: #002c54;
+  background-color: var(--hotPink);
 }
 
 .heading {
   font-size: 50px;
-  color: white;
+  color: var(--darkPurple);
 }
 
 .first {
@@ -66,7 +77,7 @@ section {
 }
 
 .heading > span {
-  color:  #efb509;
+  color:  white;
 }
 
 
@@ -74,8 +85,9 @@ section {
 
 #about-me {
   height: auto;
-  background-color: #cd7213;
+  background-color: var(--orange);
   text-align: center;
+  color: white;
 }
 
 #about-me > h1 {
@@ -111,9 +123,10 @@ section {
   border-radius: 50px;
   border-color: silver;
   margin: 50px;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   font-size: 30px;
   font-weight: bold;
+  color: var(--hotPink);
 }
 
 .icon-html5 {
@@ -161,14 +174,15 @@ section {
   font-size: 30px;
   border-radius: 10px;
   margin: 20px 20px 30px;
-  background-color: #efb509;
+  background-color: var(--lightPurple);
 }
 
 /* Projects Section */
 #projects {
   height: 1000px;
-  background-color: #cd7213;
+  background-color: var(--hotPink);
   text-align: center;
+  color: white;
 }
 
 #projects > h1 {
@@ -179,13 +193,13 @@ section {
 
 #contact-me {
   height: 600px;
-  background-color: #002c54;
+  background-color: var(--orange);
   text-align: center;
 }
 
 #contact-me > h1 {
   font-size: 50px;
-  color: #efb509;
+  color: white;
   padding-top: 50px;
 }
 
@@ -225,8 +239,8 @@ section {
 footer {
   width: 100%;
   height:90px;
-  background-color:  #16253d;
-  color: #efb509;
+  background-color:  var(--darkPurple);
+  color: white;
   padding-left: 1em;
 }
 
@@ -235,7 +249,7 @@ footer > p {
 }
 
 footer > a {
-  color: #efb509;
+  color: var(--hotPink);
   text-decoration: none;
 }
 
