@@ -30,7 +30,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center; 
-  width: 30%;
+  width: 35%;
   height: 100px;
 }
 
@@ -38,7 +38,7 @@
   border: outset;
   border-radius: 40%;
   border-width: 2px;
-  border-color: var(--lightPurple);
+  border-color: white;
   cursor: pointer;
   width: 140px;
   height: 60px;
@@ -49,6 +49,21 @@
   color: white;
   font-size: 30px;
   text-decoration: none;
+}
+
+.menu-button:hover {
+  border-width:  5px;
+}
+
+.menu-button > a:active {
+  font-size: 25px;
+}
+
+.menu-button:active {
+  height: 50px;
+  width: 110px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 section {
@@ -84,6 +99,7 @@ section {
 /* About Me Section */
 
 #about-me {
+  padding-top: 80px;
   height: auto;
   background-color: var(--orange);
   text-align: center;
@@ -179,7 +195,8 @@ section {
 
 /* Projects Section */
 #projects {
-  height: 1000px;
+  padding-top: 80px;
+  height: 1400px;
   background-color: var(--hotPink);
   text-align: center;
   color: white;
@@ -216,6 +233,7 @@ section {
 /* Contact Me Section */
 
 #contact-me {
+  padding-top: 80px;
   height: 600px;
   background-color: var(--orange);
   text-align: center;
@@ -227,11 +245,26 @@ section {
   padding-top: 50px;
 }
 
+/* creates a grid to place icons in line next to each other*/
 .contact-container {
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   justify-content: center;
   padding-top: 50px;
+}
+
+.media {
+  cursor: pointer;
+}
+
+/* let's the icon shake for 0.3s when hovered over */
+.media:hover {
+  animation: shake 0.3s; 
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .linkedin {
@@ -240,10 +273,27 @@ section {
   width: 50px;
 }
 
+/* makes icon small when clicked */
+.linkedin:active {
+  background-image: url(https://img.icons8.com/color/40/000000/linkedin.png);
+  height: 42px;
+  width: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
 .xing {
   background-image: url(https://img.icons8.com/color/48/000000/xing.png);
   height: 50px;
   width: 50px;
+}
+
+.xing:active {
+  background-image: url(https://img.icons8.com/color/40/000000/xing.png);
+  height: 42px;
+  width: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .github {
@@ -252,10 +302,26 @@ section {
   width: 50px;
 }
 
+.github:active {
+  background-image: url(https://img.icons8.com/material-sharp/40/000000/github.png);
+  height: 42px;
+  width: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
 .codepen {
   background-image: url(https://img.icons8.com/material/48/000000/codepen.png);
   height: 50px;
   width: 50px;
+}
+
+.codepen:active {
+  background-image: url(https://img.icons8.com/material/40/000000/codepen.png);
+  height: 42px;
+  width: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 /* Footer */
