@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-
 :root {
-/* Color Theme Swatches in RGBA */
---hotPink: rgba(242, 12, 73, 1);
---lightPurple: rgba(215, 12, 242, 1);
---darkPurple: rgba(85, 4, 140, 1);
---blue: rgba(81, 7, 242, 1);
---orange: rgba(242, 73, 12, 1);
+  /* Color Theme Swatches in RGBA */
+  --hotPink: rgba(242, 12, 73, 1);
+  --lightPurple: rgba(215, 12, 242, 1);
+  --darkPurple: rgba(85, 4, 140, 1);
+  --blue: rgba(81, 7, 242, 1);
+  --orange: rgba(242, 73, 12, 1);
 }
-
 
 * {
   margin: 0;
@@ -18,19 +14,41 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+section {
+  width: 100%;
+}
+
+.section-layout {
+  padding-top: 80px;
+  padding-bottom: 130px;
+  text-align: center;
+}
+
+.section-heading {
+  color: white;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.section-subheading {
+  padding-top: 50px;
+  font-size: 35px;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
   height: 100px;
   background-color: var(--darkPurple);
-  z-index: 1; /* otherwise content would overlap */
+  z-index: 1;
+  /* otherwise content would overlap */
 }
 
 .menu-container {
   display: flex;
   justify-content: space-around;
-  align-items: center; 
-  width: 35%;
+  align-items: center;
+  width: 40%;
   height: 100px;
 }
 
@@ -45,17 +63,17 @@
   background-color: var(--hotPink);
 }
 
-.menu-button > a {
+.menu-button>a {
   color: white;
   font-size: 30px;
   text-decoration: none;
 }
 
 .menu-button:hover {
-  border-width:  5px;
+  border-width: 5px;
 }
 
-.menu-button > a:active {
+.menu-button>a:active {
   font-size: 25px;
 }
 
@@ -66,18 +84,11 @@
   margin-left: 15px;
 }
 
-section {
-  width: 100%;
-}
-
 #intro {
-  padding-top: 120px;
-  height: 600px;
   background-color: var(--hotPink);
 }
 
 .heading {
-  font-size: 50px;
   color: var(--darkPurple);
 }
 
@@ -91,29 +102,15 @@ section {
   margin-right: 20%;
 }
 
-.heading > span {
-  color:  white;
-}
-
-
-/* About Me Section */
-
-#about-me {
-  padding-top: 80px;
-  height: auto;
-  background-color: var(--orange);
-  text-align: center;
+.heading>span {
   color: white;
 }
 
-#about-me > h1 {
-  padding-top: 50px;
-  font-size: 50px;
-}
-
-#about-me > h2 {
-  padding-top: 50px;
-  font-size: 35px;
+/* About Me Section */
+#about-me {
+  height: auto;
+  background-color: var(--orange);
+  color: white;
 }
 
 /* flex-container for languages */
@@ -145,27 +142,8 @@ section {
   color: var(--hotPink);
 }
 
-.icon-html5 {
-  background-image:url(https://img.icons8.com/color/144/000000/html-5.png);
+.icon-size {
   width: 144px;
-  height: 140px;
-}
-
-.icon-css {
-  background-image: url(https://img.icons8.com/color/144/000000/css3.png);
-  width: 144px;
-  height: 140px;
-}
-
-.icon-js {
-  background-image:         url(https://img.icons8.com/color/144/000000/javascript.png);
-  width: 144px;
-  height: 140px;
-}
-
-.icon-java {
-  background-image: url(https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png);
-   width: 144px;
   height: 140px;
 }
 
@@ -195,16 +173,8 @@ section {
 
 /* Projects Section */
 #projects {
-  padding-top: 80px;
   height: 1400px;
   background-color: var(--hotPink);
-  text-align: center;
-  color: white;
-}
-
-#projects > h1 {
-  font-size: 50px;
-  padding-top: 50px;
 }
 
 .projects-container {
@@ -231,20 +201,9 @@ section {
 }
 
 /* Contact Me Section */
-
 #contact-me {
-  padding-top: 80px;
-  height: 600px;
   background-color: var(--orange);
-  text-align: center;
 }
-
-#contact-me > h1 {
-  font-size: 50px;
-  color: white;
-  padding-top: 50px;
-}
-
 /* creates a grid to place icons in line next to each other*/
 .contact-container {
   display: grid;
@@ -253,96 +212,58 @@ section {
   padding-top: 50px;
 }
 
-.media {
+.contact-logo {
+  /*background-image: url(https://img.icons8.com/color/48/000000/linkedin.png);*/
+  height: 50px;
+  width: 50px;
   cursor: pointer;
 }
 
-/* let's the icon shake for 0.3s when hovered over */
-.media:hover {
-  animation: shake 0.3s; 
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-.linkedin {
-  background-image: url(https://img.icons8.com/color/48/000000/linkedin.png);
-  height: 50px;
-  width: 50px;
-}
-
 /* makes icon small when clicked */
-.linkedin:active {
-  background-image: url(https://img.icons8.com/color/40/000000/linkedin.png);
+.contact-logo:hover,
+.contact-logo:focus {
+  /*background-image: url(https://img.icons8.com/color/40/000000/linkedin.png);*/
   height: 42px;
   width: 42px;
   margin-top: 4px;
   margin-left: 4px;
+  animation: shake 0.3s;
 }
 
-.xing {
-  background-image: url(https://img.icons8.com/color/48/000000/xing.png);
-  height: 50px;
-  width: 50px;
-}
+/* let's the icon shake for 0.3s when hovered over */
 
-.xing:active {
-  background-image: url(https://img.icons8.com/color/40/000000/xing.png);
-  height: 42px;
-  width: 42px;
-  margin-top: 4px;
-  margin-left: 4px;
-}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
 
-.github {
-  background-image: url(https://img.icons8.com/material-sharp/48/000000/github.png);
-  height: 50px;
-  width: 50px;
-}
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
 
-.github:active {
-  background-image: url(https://img.icons8.com/material-sharp/40/000000/github.png);
-  height: 42px;
-  width: 42px;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.codepen {
-  background-image: url(https://img.icons8.com/material/48/000000/codepen.png);
-  height: 50px;
-  width: 50px;
-}
-
-.codepen:active {
-  background-image: url(https://img.icons8.com/material/40/000000/codepen.png);
-  height: 42px;
-  width: 42px;
-  margin-top: 4px;
-  margin-left: 4px;
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Footer */
-
 footer {
   width: 100%;
-  height:90px;
-  background-color:  var(--darkPurple);
+  height: 90px;
+  background-color: var(--darkPurple);
   color: white;
   padding-left: 1em;
 }
 
-footer > p {
+footer>p {
   font-size: 20px;
 }
 
-footer > a {
+footer>a {
   color: var(--hotPink);
   text-decoration: none;
 }
 
-footer > a > span {
+footer>a>span {
   text-decoration: underline;
 }
