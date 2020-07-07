@@ -200,6 +200,11 @@ section {
   margin: 75px;
 }
 
+.project:hover,
+.project:focus {
+  transform: scale(1.1);
+}
+
 /* Contact Me Section */
 #contact-me {
   background-color: var(--orange);
@@ -213,16 +218,13 @@ section {
 }
 
 .contact-logo {
-  /*background-image: url(https://img.icons8.com/color/48/000000/linkedin.png);*/
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
 
-/* makes icon small when clicked */
 .contact-logo:hover,
 .contact-logo:focus {
-  /*background-image: url(https://img.icons8.com/color/40/000000/linkedin.png);*/
   height: 42px;
   width: 42px;
   margin-top: 4px;
@@ -231,7 +233,6 @@ section {
 }
 
 /* let's the icon shake for 0.3s when hovered over */
-
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
