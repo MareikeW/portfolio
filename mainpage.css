@@ -14,18 +14,16 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 
 /* Global styling */
 body {
   background-color: var(--white);
 }
 
-header {
-
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -71,7 +69,7 @@ p {
 .nav {
   background-color: var(--darkPurple);
   width: 200px;
-  height: 90vh;
+  height: 100vh;
   position: fixed;
   opacity: .97;
   display: none;
