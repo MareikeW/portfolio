@@ -38,15 +38,11 @@ p {
   font-size: 1.2em;
 }
 
-.intro__section,
-.background__section,
-.projects__section {
+section {
   padding: 3em 1.5em;
 }
 
-.background_heading,
-.projects__heading,
-.project__title  {
+.heading  {
   text-align: center;
   margin-bottom: 1em;
 }
@@ -131,6 +127,13 @@ p {
   padding-bottom: 2em;
 }
 
+@media (min-width: 800px) {
+    .background__container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+}
+
 /* Projects */
 .projects__container {
   display: flex;
@@ -144,6 +147,21 @@ p {
   margin: 10px;
   background-color: yellow;
   padding: .5em;
+}
+
+/* Contact */
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding-right: 2em;
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.2);
 }
 
 /* footer */
