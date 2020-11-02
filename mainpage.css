@@ -129,6 +129,15 @@ section {
   padding-bottom: 2em;
 }
 
+#yearspacing {
+  letter-spacing: 0.1em;
+}
+
+.cert:hover,
+.cert:focus {
+  font-weight: 800;
+}
+
 @media (min-width: 800px) {
     .background__container {
       flex-direction: row;
@@ -142,13 +151,26 @@ section {
   flex-wrap: wrap;
   background-color: var(--violet);
   justify-content: center;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .projects__container > div {
-  width: 90%;
+  width: 400px;
   margin: 10px;
   background-color: yellow;
   padding: .5em;
+}
+
+.project__picture {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.project__tools {
+  font-weight: 600;
 }
 
 /* Contact */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="de" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
   <!--Introduction-->
   <section class="intro__section" id="intro">
     <h1 class="intro__heading">Hi, my name is Mareike Wendler and I'm a front-end developer.</h1>
-    <img src="../pic-of-me.jpg" alt="Picture of me." class="picture">
+    <img src="..\img\pic-of-me.jpg" alt="Picture of me." class="picture">
   </section>
 
   <!--Technical Skills and Certificates-->
@@ -37,21 +37,20 @@
     <div class="background__container">
     <div class="background">
       <h2 class="background__subheading">Technical Skills</h2>
-      <p class="skill">HTML5, CSS3, JavaScript</p>
-      <p class="skill">React</p>
-      <p class="skill">Bootstrap 4, jQuery</p>
-      <p class="skill">ES6</p>
-      <p class="skill">Mobile First</p>
-      <p class="skill">Responsive Design</p>
-      <p class="skill">JSON</p>
+      <p class="skill" lang="en">HTML5, CSS3, JavaScript</p>
+      <p class="skill" lang="en">React</p>
+      <p class="skill" lang="en">Bootstrap 4, jQuery</p>
+      <p class="skill" lang="en">ES6</p>
+      <p class="skill" lang="en">Mobile First</p>
+      <p class="skill" lang="en">Responsive Design</p>
+      <p class="skill" lang="en" aria-label="j son">JSON</p>
     </div>
     <div class="background">
       <h2 class="background__subheading">Certificates</h2>
-      <p class="cert"><a href="https://scrimba.com/certificate/uWDG5rSY/gresponsive">2020 Scrimba Frontend Career Path</a></p>
-      <p class="cert">2020 Scrimba Responsive Web Design Bootcamp</p>
-      <p class="cert">2020 Scrimba JavaScript Bootcamp</p>
-      <p class="cert">2020 Scrimba React Bootcamp</p>
-      <p class="cert">2019 Free Code Academy Responsive Web Design</p>
+      <p class="cert" lang="en"><a href="#">2020 Scrimba Frontend Career Path</a></p>
+      <p class="cert" lang="en"><a href="https://scrimba.com/certificate/uWDG5rSY/gresponsive" target="_blank">2020 Scrimba Responsive Web Design Bootcamp</a></p>
+      <p class="cert" lang="en"><a href="https://scrimba.com/certificate/uWDG5rSY/gjavascript" target="_blank">2020 Scrimba JavaScript Bootcamp</a></p>
+      <p class="cert" lang="en"><a href="https://www.freecodecamp.org/certification/mareike/responsive-web-design" target="_blank">2<span id="yearspacing">019</span> Free Code Academy Responsive Web Design</a></p>
     </div>
   </div>
   </section>
@@ -62,15 +61,20 @@
 
     <div class="projects__container">
       <div class="project">
-        <h2 class="heading">Titel 1</h2>
-        <p class="project__tools">HTML, CSS, JavaScript</p>
-        <p class="project__description">Beschreibung von dem Projekt. Beschreibung von dem Projekt. Beschreibung von dem Projekt.</p>
+        <a href="https://pomodoro-and-tasks.netlify.app" target="_blank">
+        <h2 class="heading">Pomodoro- und Aufgabenapp</h2>
+        <img src="..\img\pomodoro-app.png" alt="Screenshot of the Pomodoro App." class="project__picture">
+        <p class="project__tools">HTML, CSS, JavaScript, OOP, setInterval()-Methode</p>
+        <p class="project__description">Eine Webapplikation, in der einzelne Aufgaben eingetragen werden können. 
+          Für das Zeitmanagement gibt es eine Pomodorouhr.</p>
+        </a>
       </div>
 
       <div class="project">
         <h2 class="heading">Titel 2</h2>
         <p class="project__tools">HTML, CSS, JavaScript</p>
-        <p class="project__description">Beschreibung von dem Projekt. Beschreibung von dem Projekt. Beschreibung von dem Projekt.</p>
+        <p class="project__description">Beschreibung von dem Projekt. Beschreibung von dem Projekt. Beschreibung von dem Projekt.
+        </p>
       </div>
 
       <div class="project">
@@ -94,23 +98,23 @@
 
       <a href="https://www.linkedin.com/in/mareike-wendler/" target="_blank">
         <div class="logo">
-          <img src="..\linkedin.png" alt="Linkedin-Logo">
+          <img src="..\img\linkedin.png" alt="Linkedin-Logo">
         </div>
       </a>
 
       <a href="https://www.xing.com/profile/Mareike_Wendler2/cv" target="_blank">
         <div class="logo">
-          <img src="..\xing.png" alt="Xing-Logo">
+          <img src="..\img\xing.png" alt="Xing-Logo">
         </div>
       </a>
       <a href="https://github.com/MareikeW" target="_blank">
         <div class="logo">
-          <img src="..\github.png" alt="Github-Logo">
+          <img src="..\img\github.png" alt="Github-Logo">
         </div>
       </a>
       <a href="https://codepen.io/Mareike91" target="_blank">
         <div class="logo">
-          <img src="..\codepen.png" alt="Codepen-Logo">
+          <img src="..\img\codepen.png" alt="Codepen-Logo">
         </div>
       </a>
 
@@ -120,7 +124,7 @@
   <!--Footer-->
   <footer class="footer">
     <p>Copyright &copy; 2020 Mareike Wendler</p>
-    <a href="https://icons8.com/icon/20909/html-5">All icons by <span>Icons8</span></a>
+    <a href="https://icons8.com/icon/20909/html-5" target="_blank">All icons by <span>Icons8</span></a>
   </footer>
 
 <script src="page.js"></script>
