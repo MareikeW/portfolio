@@ -14,8 +14,6 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-
-
 /* Global styling */
 body {
   background-color: var(--lavenderblush);
@@ -98,6 +96,7 @@ section {
   background-color: var(--lavenderblush);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-top: 100px;
 }
@@ -110,6 +109,28 @@ section {
 
 .picture {
   width: 200px;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 800px) {
+  .intro__section {
+    flex-direction: row;
+  }
+
+  .picture {
+    margin-bottom: 0;
+  }
+
+  #zeilenumbruch {
+    display: block;
+    margin-left: 1.8em;
+  }
+}
+
+@media (min-width: 900px) {
+  #zeilenumbruch {
+    margin-left: 4em;
+  }
 }
 
 /* Background */
