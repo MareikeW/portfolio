@@ -1,6 +1,6 @@
 :root {
   /* Color Themes */
-  --violet: #DA70D6;
+  --violet: #c154c1;
   --darkPurple: #7b1fa2;
   --lightPurple: #8e24aa;
   --lavenderblush: 	#FFF0F5;
@@ -169,20 +169,24 @@ section {
 .projects__container {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--violet);
-  justify-content: center;
-  max-width: 850px;
+  justify-content: space-around;
   margin: 0 auto;
 }
 
-.projects__container > div {
-  width: 400px;
+.project {
   margin: 10px;
-  background-color: yellow;
-  padding: .5em;
+  max-width: 400px;
+  padding: 1em;
+  background-color: var(--violet);
+}
+
+.project:hover,
+.project:focus {
+  cursor: pointer;
 }
 
 .project__picture {
+  border-radius: 10px;
   width: 300px;
   display: block;
   margin: 0 auto;
@@ -191,6 +195,16 @@ section {
 
 .project__tools {
   font-weight: 600;
+}
+
+.project__description {
+  margin-top: 0.5em;
+}
+
+@media (min-width: 500px) {
+  .projects__container {
+      max-width: 900px;
+  }
 }
 
 /* Contact */
