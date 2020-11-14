@@ -175,7 +175,7 @@ section {
 
 .project {
   margin: 10px;
-  max-width: 400px;
+  max-width: 480px;
   padding: 1em;
   background-color: var(--violet);
 }
@@ -183,6 +183,7 @@ section {
 .project:hover,
 .project:focus {
   cursor: pointer;
+  
 }
 
 .project__picture {
@@ -203,7 +204,7 @@ section {
 
 @media (min-width: 500px) {
   .projects__container {
-      max-width: 900px;
+      max-width: 1000px;
   }
 }
 
