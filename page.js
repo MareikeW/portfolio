@@ -12,8 +12,8 @@ function toggleNav() {
 }
 
 function openNavBar() {
-    navBar.style.display = 'block';
-    navOpenBtn.style.display = 'none';
+        navBar.style.display = 'block';
+        navOpenBtn.style.display = 'none';  
 }
 
 function closeNavBar() {
