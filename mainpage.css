@@ -200,6 +200,7 @@ section {
   transition: box-shadow 300ms;
   transition: transform 300ms;
   cursor: pointer;
+  position: relative;
 }
 
 .project:hover,
@@ -224,6 +225,25 @@ section {
 .project__description {
   margin-top: 0.5em;
   color: var(--lightlilac);
+  margin-bottom: 2em;
+}
+
+.github-source__button {
+  padding: 0.5em 1em;
+  background-color: var(--lavenderblush);
+  border-color: var(--lavenderblush);
+  border-radius: 10px;
+  color: var(--grey);
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+.github-source__button:hover,
+.github-source__button:focus {
+  cursor: pointer;
+  background-color: var(--grey);
+  color: var(--lavenderblush);
 }
 
 @media (min-width: 500px) {
