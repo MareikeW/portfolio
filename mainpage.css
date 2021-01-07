@@ -54,6 +54,7 @@ section {
   border: none;
   font-size: 1.5em;
   position: fixed;
+  z-index: 1;
 }
 
 .nav--toggle:hover,
@@ -69,6 +70,7 @@ section {
   position: fixed;
   opacity: .97;
   display: none;
+  z-index: 1;
 }
 
 .nav__container {
@@ -150,6 +152,10 @@ section {
   padding-bottom: 2em;
 }
 
+.background-list {
+  list-style-position: inside;
+}
+
 #yearspacing {
   letter-spacing: 0.1em;
 }
@@ -197,8 +203,8 @@ section {
   max-width: 480px;
   padding: 1em;
   background-color: var(--violet);
-  transition: box-shadow 300ms;
-  transition: transform 300ms;
+  transition: box-shadow 3s;
+  transition: transform 3s;
   cursor: pointer;
   position: relative;
 }
