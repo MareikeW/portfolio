@@ -277,6 +277,7 @@ section {
   margin-top: 0.5em;
   color: var(--lightlilac);
   margin-bottom: 2em;
+  text-align: justify;
 }
 
 .github-source__button {
