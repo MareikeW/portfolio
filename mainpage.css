@@ -224,7 +224,6 @@ section {
       justify-content: space-around;
     }
 
-
     .background {
       width: 45%;
     }
@@ -264,10 +263,8 @@ section {
 }
 
 .project__picture {
-  border-radius: 10px;
-  width: 300px;
+  width: 450px;
   display: block;
-  margin: 0 auto;
   margin-bottom: 2em;
 }
 
