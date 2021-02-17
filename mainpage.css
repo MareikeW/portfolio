@@ -133,6 +133,10 @@ section {
   #zeilenumbruch {
     margin-left: 4em;
   }
+
+  .picture {
+    width: 300px;
+  }
 }
 
 .about {
@@ -198,9 +202,29 @@ section {
   padding-bottom: 2em;
 }
 
+.background h2 {
+  text-align: center;
+}
+
 .background-list {
   font-weight: 800;
   list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}
+
+.background-list li {
+  padding: 10px;
+}
+
+.background-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.background-icon-text {
+  display: block;
+  text-align: center;
 }
 
 #yearspacing {
@@ -218,7 +242,7 @@ section {
   line-height: 1.2em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 880px) {
     .background__container {
       flex-direction: row;
       justify-content: space-around;
