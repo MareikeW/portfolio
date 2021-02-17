@@ -102,6 +102,8 @@ section {
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
+  animation: showIntro;
+  animation-duration: 4s;
 }
 
 .intro__heading {
@@ -112,6 +114,11 @@ section {
 .picture {
   width: 200px;
   margin-bottom: 2em;
+}
+
+@keyframes showIntro {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @media (min-width: 800px) {
@@ -196,6 +203,8 @@ section {
   display: flex;
   flex-direction: column;
   line-height: 2em;
+  background-color: var(--lightPurple);
+  padding: 1em;
 }
 
 .background:first-child {
@@ -242,7 +251,7 @@ section {
   line-height: 1.2em;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 920px) {
     .background__container {
       flex-direction: row;
       justify-content: space-around;
@@ -250,6 +259,10 @@ section {
 
     .background {
       width: 45%;
+    }
+
+    .background h2 {
+      margin-bottom: 1.5em;
     }
 }
 
