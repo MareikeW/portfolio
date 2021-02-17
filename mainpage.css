@@ -199,8 +199,8 @@ section {
 }
 
 .background-list {
-  list-style-position: inside;
   font-weight: 800;
+  list-style: none;
 }
 
 #yearspacing {
@@ -271,6 +271,13 @@ section {
 .project__tools {
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+.tech {
+  background-color: rgba(222, 203, 245, 0.45);
+  border-radius: 15px;
+  padding: 0.3em 0.5em;
+  line-height: 45px;
 }
 
 .project__description {
