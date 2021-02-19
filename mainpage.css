@@ -364,6 +364,16 @@ section {
   transform: scale(1.2);
 }
 
+#contact-me h2,
+#contact-me p {
+  text-align: center;
+}
+
+#contact-me p {
+  margin-top: 1em;
+}
+
+
 /* footer */
 .footer {
   padding: 1em;
